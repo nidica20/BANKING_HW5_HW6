@@ -1,4 +1,4 @@
-3#ifndef BANK_H_
+#ifndef BANK_H_
 #define BANK_H_
 #include <vector>
 #include <stdexcept>

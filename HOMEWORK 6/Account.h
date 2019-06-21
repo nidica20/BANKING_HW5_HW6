@@ -51,7 +51,7 @@ protected:
 		Transaction *tran = NULL;
 
 		// FIXME: Create a Transaction object and assign it to the transaction vector.
-		tran = new Transactiton(customer->getCustomerNumber(), type, amt, fees);
+		tran = new Transaction(customer->getCustomerNumber(), type, amt, fees);
 		transactions.push_back(tran);
 	}
 
@@ -102,8 +102,8 @@ public:
 		std::stringstream ss; // for composing the string that describes this account
 
 		// FIXME: Add information about the customer who owns this account.
-		ss << " Customer Name: " << customer->getCustomerName(); << endl;
-		ss << " Customer ID: " << customer->getCustomerNumber(); << endl;
+		ss << " Customer Name: " << customer->getCustomerName() << endl;
+		ss << " Customer ID: " << customer->getCustomerNumber() << endl;
 		ss << "  Balance: " << balance << std::endl;
 		ss << "  Account ID: " << account_number << std::endl;
 		return ss.str();
@@ -167,8 +167,8 @@ class CheckingAccount : public Account
 			std::stringstream ss; // for composing the string that describes this account
 
 			// FIXME: Add information about the customer who owns this account.
-			ss << " Customer Name: " << customer->getCustomerName(); << endl;
-			ss << " Customer ID: " << customer->getCustomerNumber(); << endl;
+			ss << " Customer Name: " << customer->getCustomerName() << endl;
+			ss << " Customer ID: " << customer->getCustomerNumber() << endl;
 			ss << "Account Type: Checking" << endl;
 			ss << "  Balance: " << balance << std::endl;
 			ss << "  Account ID: " << account_number << std::endl;
@@ -236,8 +236,8 @@ class SavingsAccount : public Account
 			std::stringstream ss; // for composing the string that describes this account
 
 			// FIXME: Add information about the customer who owns this savings account.
-			ss << " Customer Name: " << customer->getCustomerName(); << endl;
-			ss << " Customer ID: " << customer->getCustomerNumber(); << endl;
+			ss << " Customer Name: " << customer->getCustomerName() << endl;
+			ss << " Customer ID: " << customer->getCustomerNumber() << endl;
 			ss << "Account Type: Savings" << endl;
 			ss << "  Balance: " << balance << std::endl;
 			ss << "  Account ID: " << account_number << std::endl;
